@@ -1,0 +1,11 @@
+<%- include partials/header.ejs %>
+  <body>
+    <h1>Users</h1>
+    <!--ejs doen't support foreach loop -->
+    <ul>
+    <% for(var i=0; i<users.length;i++){ %>
+    <li><%= users[i] %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

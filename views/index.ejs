@@ -1,0 +1,36 @@
+<%- include partials/header.ejs %>
+<!--  <body>
+    <h1><%= title %></h1>
+    <p class='jumbotron'>Welcome to <%= message %></p>
+  </body> -->
+<body>
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            </ul>
+        </nav>
+        
+        <form>
+            <h1>Login form</h1>
+            <div class="form-group">
+            <label for="username" class="col-sm-2">Username :</label>
+            <input name="username" />
+                </div>
+            <div class="form-group">
+            <label for="password" class="col-sm-2">Password :</label>
+            <input name="password" />
+            </div>
+            <div class="col-sm-offset-2">
+            <input type="submit" value="Login" class="btn btn-lg btn-success"/>
+            </div>
+        </form>
+        
+        <!-- Latest jQuery -->
+        <script src="http://code.jquery.com/jquery-2.14.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    </body>
+<%- include partials/footer.ejs %>
