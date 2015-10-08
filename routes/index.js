@@ -3,13 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'First Express Page !!!' , message : 'Its pretty much cool!!!'});
+  res.render('index', { title: 'Hola, Mayank Raval !!!' , message : 'Welcome to my personal Web !!!'});
 });
 
-//Get random page
-router.get('/random', function(req,res,next) {
+//Get contact page
+router.get('/contact', function(req,res,next) {
     var ranNum = Math.random();
-    res.render('random',{ranNum: ranNum,title : 'First Express Page !!!'});
+    res.render('contact',{title : 'Get in Touch!!!'});
 });
 
 module.exports = router;
